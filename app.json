@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "rn-auth-1",
-    "slug": "rn-auth-1",
+    "name": "rn-auth",
+    "slug": "rn-auth",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
