@@ -2,6 +2,8 @@ import { StyleSheet, Text, View, TouchableOpacity, Modal, TextInput, Button } fr
 import React, { useState } from 'react'
 import COLORS from '../utils/colors'
 import { AntDesign } from '@expo/vector-icons';
+import SelectDropdown from './SelectDropdown.js';
+import { exerciseTarget } from '../utils/exercises';
 
 
 // const Item = ({ item, onPress, backgroundColor, textColor }) => (
@@ -10,19 +12,6 @@ import { AntDesign } from '@expo/vector-icons';
 //   </TouchableOpacity>
 // );
 
-const exerciseType = [
-  { id : "0", text : "barbell"},
-  { id : "1", text : "dumbell"},
-  { id : "2", text : "body weight"},
-  { id : "3", text : "kettlebell"},
-  { id : "4", text : "machine"},
-  { id : "5", text : "fixed bar"},
-  { id : "6", text : "cable"}
-]
-const exerciseTarget = [
-  { id : "0", text : "upper body"},
-  { id : "1", text : "lower body"}
-]
 
 const ModalContainer = ({ entry, modalVisible, onClose }) => {
   return(
@@ -60,6 +49,11 @@ export default ListItem = ({item}) => {
   const [modalEntry, setModalEntry] = useState();
   const [inputText, setInputText] = useState()
 
+  const [selectedItem, setSelectedItem] = useState(null);
+  const onSelect = (item) => {
+    setSelectedItem(item)
+  }
+
   return (
     <TouchableOpacity style={[styles.wrap]} onPress={() => setExpanded(!expanded) }>
       <View style={styles.itemContainer}>
@@ -90,7 +84,6 @@ export default ListItem = ({item}) => {
             transparent={true}
             visible={modalVisible}
             onRequestClose={() => {
-              Alert.alert("Modal has been closed.");
               setModalVisible(!modalVisible);
             }}
           >
@@ -124,6 +117,13 @@ export default ListItem = ({item}) => {
                       numberOfLines={4}
                       onChangeText={(text) => setInputText(text)}
                       defaultValue={inputText}
+                    />
+                  </View>
+                  <View>
+                    <SelectDropdown 
+                      data={exerciseTarget}
+                      value={selectedItem}
+                      onSelect={onSelect}
                     />
                   </View>
                 </View>

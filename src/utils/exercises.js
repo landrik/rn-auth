@@ -1,0 +1,47 @@
+export const exerciseEquipment = [
+  { id : "0", title : "barbell", selected: false, key: "equipment"},
+  { id : "1", title : "dumbell", selected: false, key: "equipment"},
+  { id : "2", title : "body weight", selected: false, key: "equipment"},
+  { id : "3", title : "kettlebell", selected: false, key: "equipment"},
+  { id : "4", title : "machine", selected: false, key: "equipment"},
+  { id : "5", title : "fixed bar", selected: false, key: "equipment"},
+  { id : "6", title : "cable", selected: false, key: "equipment"},
+  { id : "7", title : "Bands", selected: false, key: "equipment"},
+  { id : "8", title : "Foam Roll", selected: false, key: "equipment"},
+  { id : "9", title : "Medicine Ball", selected: false, key: "equipment"},
+  { id : "10", title : "None", selected: false, key: "equipment"},
+  { id : "11", title : "E-Z Curl Bar", selected: false, key: "equipment"},
+  { id : "12", title : "Other", selected: false, key: "equipment"},
+  { id : "13", title : "Exercise Ball", selected: false, key: "equipment"},
+]
+export const exerciseTarget = [
+  { id : "0", title : "upper body", selected: false, key: "target"},
+  { id : "1", title : "lower body", selected: false, key: "target"},
+  { id : "2", title : "chest", selected: false, key: "target"},
+  { id : "3", title : "back", selected: false, key: "target"},
+  { id : "4", title : "triceps", selected: false, key: "target"},
+  { id : "5", title : "biceps", selected: false, key: "target"},
+  { id : "6", title : "legs", selected: false, key: "target"},
+  { id : "7", title : "abs", selected: false, key: "target"},
+  { id : "8", title : "shoulder", selected: false, key: "target"},
+  { id : "9", title : "lats", selected: false, key: "target"},
+  { id : "10", title : "Forearms", selected: false, key: "target"},
+  { id : "11", title : "midle back", selected: false, key: "target"},
+  { id : "12", title : "lower back", selected: false, key: "target"},
+  { id : "13", title : "Quadriceps", selected: false, key: "target"},
+  { id : "14", title : "hamstrings", selected: false, key: "target"},
+  { id : "15", title : "Calves", selected: false, key: "target"},
+  { id : "16", title : "Traps", selected: false, key: "target"},
+  { id : "17", title : "Glutes", selected: false, key: "target"},
+  { id : "18", title : "adductors", selected: false, key: "target"},
+  { id : "19", title : "abductors", selected: false, key: "target"}
+]
+export const exerciseType = [
+  {id: "1", title: "Cardio", selected: false, key: "type"},
+  {id: "2", title: "Olympic Weightlifting", selected: false, key: "type"},
+  {id: "3", title: "Plyometrics", selected: false, key: "type"},
+  {id: "4", title: "Powerlifting", selected: false, key: "type"},
+  {id: "5", title: "Strength", selected: false, key: "type"},
+  {id: "6", title: "Stretching", selected: false, key: "type"},
+  {id: "7", title: "Strongman", selected: false, key: "type"}
+]
